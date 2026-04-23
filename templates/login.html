@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureBank — Online Banking Login</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Top navigation bar */
+    .navbar {
+      width: 100%;
+      background: #003366;
+      padding: 12px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .logo {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .navbar .logo span {
+      color: #FFD700;
+    }
+    .navbar nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+    }
+
+    /* Hero banner */
+    .hero {
+      width: 100%;
+      background: linear-gradient(135deg, #003366, #0055a5);
+      padding: 30px 40px;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 { font-size: 26px; margin-bottom: 6px; }
+    .hero p  { font-size: 14px; color: #aac8f0; }
+
+    /* Login card */
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      padding: 40px;
+      width: 100%;
+      max-width: 420px;
+      margin: 40px auto;
+    }
+    .card h2 {
+      font-size: 20px;
+      color: #003366;
+      margin-bottom: 6px;
+    }
+    .card .subtitle {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 28px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 6px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      outline: none;
+      transition: border 0.2s;
+    }
+    input:focus { border-color: #0055a5; }
+
+    .btn-login {
+      width: 100%;
+      background: #003366;
+      color: white;
+      border: none;
+      padding: 13px;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    .btn-login:hover { background: #0055a5; }
+
+    .links {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+    }
+    .links a { color: #0055a5; text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
+
+    /* Security badges */
+    .security {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 24px;
+      font-size: 12px;
+      color: #888;
+    }
+    .badge {
+      background: #f0f4f8;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 4px 10px;
+      font-size: 11px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      width: 100%;
+      background: #003366;
+      color: #aac8f0;
+      text-align: center;
+      padding: 16px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Secure<span>Bank</span></div>
+    <nav>
+      <a href="#">Personal</a>
+      <a href="#">Business</a>
+      <a href="#">Help</a>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Welcome to SecureBank Online</h1>
+    <p>Safe, fast, and secure banking at your fingertips</p>
+  </div>
+
+  <!-- Login Card -->
+  <div class="card">
+    <h2>Sign In to Your Account</h2>
+    <p class="subtitle">Enter your credentials to access online banking</p>
+
+    {% if error %}
+    <div style="background:#fff0f0;border:1px solid #f5c6cb;color:#c00;padding:10px 14px;border-radius:5px;margin-bottom:18px;font-size:13px;">
+      {{ error }}
+    </div>
+    {% endif %}
+
+    <form method="POST" action="/login">
+      <label for="username">Customer ID / Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your Customer ID" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <button type="submit" class="btn-login">LOGIN SECURELY</button>
+    </form>
+
+    <div class="links">
+      <a href="#">Forgot Password?</a> &nbsp;|&nbsp;
+      <a href="#">Register</a> &nbsp;|&nbsp;
+      <a href="#">Help</a>
+    </div>
+
+    <div class="security">
+      <span class="badge">🔒 256-bit SSL</span>
+      <span class="badge">✔ Verified Secure</span>
+      <span class="badge">🛡 FDIC Insured</span>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 SecureBank. All rights reserved. &nbsp;|&nbsp;
+    Privacy Policy &nbsp;|&nbsp; Terms of Use
+  </footer>
+
+</body>
+</html>

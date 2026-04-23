@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-04-01T14:48:51.922510+00:00",
+    "event": "PAGE_VISITED",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "Page": "/login"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-04-01T14:49:25.145069+00:00",
+    "event": "LOGIN_ATTEMPT",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "Username": "alice",
+      "Password": "test123",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-04-01T14:51:21.069820+00:00",
+    "event": "PAGE_VISITED",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "Page": "/login"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-04-01T14:54:41.714575+00:00",
+    "event": "LOGIN_ATTEMPT",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "Username": "bob",
+      "Password": "123",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-04-02T15:25:57.109516+00:00",
+    "event": "PAGE_VISITED",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "Page": "/login"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-04-02T15:26:24.069327+00:00",
+    "event": "LOGIN_ATTEMPT",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "Username": "attack",
+      "Password": "123",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-04-02T15:26:48.635695+00:00",
+    "event": "PAGE_VISITED",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "Page": "/login"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-04-02T15:42:36.177545+00:00",
+    "event": "PAGE_VISITED",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "Page": "/login"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-04-02T15:42:59.768762+00:00",
+    "event": "LOGIN_ATTEMPT",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "Username": "test",
+      "Password": "123",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  },
+  {
+    "id": 10,
+    "timestamp": "2026-04-02T15:48:49.221620+00:00",
+    "event": "PAGE_VISITED",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "Page": "/login"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  },
+  {
+    "id": 11,
+    "timestamp": "2026-04-02T15:49:14.070912+00:00",
+    "event": "LOGIN_ATTEMPT",
+    "details": {
+      "IP Address": "127.0.0.1",
+      "Username": "test1",
+      "Password": "123",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    "status": "SUSPICIOUS ACTIVITY DETECTED"
+  }
+]
